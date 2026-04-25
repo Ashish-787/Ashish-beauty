@@ -1,0 +1,169 @@
+body{
+  font-family: 'Playfair Display', serif;
+  background:#f8f6f2;
+}
+
+/* HERO SECTION */
+
+.hero-slider{
+  position:relative;
+  width:100%;
+  height:80vh;
+  overflow:hidden;
+}
+
+.hero-slide{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  opacity:0;
+  transform:scale(1.05);
+  transition:opacity 1s ease, transform 6s ease;
+}
+
+.hero-slide.active{
+  opacity:1;
+  transform:scale(1);
+}
+
+.slider-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+  to right,
+  rgba(0,0,0,0.8),
+  rgba(0,0,0,0.3)
+  );
+  z-index:2;
+}
+
+.hero-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:3;
+  color:white;
+  max-width:700px;
+  width:90%;
+}
+
+.hero-content h1{
+  font-size:3rem;
+}
+
+.hero-content p{
+  font-size:1.2rem;
+  margin:20px 0;
+}
+
+/* GOLD BUTTON */
+
+.gold-btn{
+  background:#d4af37;
+  padding:10px 25px;
+  color:white;
+  text-decoration:none;
+  border-radius:4px;
+}
+
+.gold-btn-sm{
+  background:#d4af37;
+  border:none;
+  padding:6px 15px;
+  color:white;
+}
+
+/* COLLECTIONS */
+
+.collection-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.collection-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.collection-overlay{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  color:white;
+  padding:15px;
+}
+
+/* PRODUCTS */
+
+.product-card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+.product-info{
+  padding:20px;
+}
+
+.price{
+  color:#d4af37;
+  font-weight:600;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-slider{
+height:60vh;
+}
+
+.hero-content h1{
+font-size:1.8rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+}
+
+
+/* *************************************Live Rate k liye ************************** */
+
+.ticker-wrap {
+  overflow: hidden;
+  background: #000;
+  color: gold;
+  padding: 8px 0;
+  border-top: 1px solid #333;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+  font-weight: 700;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

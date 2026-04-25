@@ -1,0 +1,226 @@
+
+/*************************************** Collection.jsx page ****************************************/
+.collection-hero{
+height:65vh;
+background:url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.hero-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+color:white;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:50px;
+font-weight:700;
+}
+
+.hero-content p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.collection-title{
+font-size:36px;
+font-weight:700;
+margin-bottom:30px;
+}
+
+/* filters */
+
+.filter-btn{
+border:1px solid #d4af37;
+padding:8px 18px;
+margin:5px;
+border-radius:25px;
+background:transparent;
+color:#d4af37;
+}
+
+.filter-btn.active{
+background:#d4af37;
+color:black;
+}
+
+/* service card */
+
+.collection-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.collection-card:hover{
+transform:translateY(-8px);
+}
+
+.collection-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.desc{
+font-size:14px;
+color:#777;
+}
+
+.price{
+color:#d4af37;
+font-weight:600;
+margin:10px 0;
+}
+
+/* packages */
+
+.packages-section{
+background:#f8f6f2;
+padding:80px 0;
+}
+
+.package-card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.package-card ul{
+list-style:none;
+padding:0;
+}
+
+/* offers */
+
+.offers-section{
+padding:80px 0;
+}
+
+.offer-card{
+background:#111;
+color:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+}
+
+/* membership */
+
+.membership{
+background:#f8f6f2;
+padding:80px 0;
+}
+
+.membership-card{
+background:white;
+padding:30px;
+border-radius:15px;
+}
+
+/* CTA */
+
+.booking-cta{
+background:#000;
+color:white;
+padding:80px 0;
+}
+
+/* button */
+
+.gold-btn{
+background:linear-gradient(45deg,#d4af37,#ffd700);
+border:none;
+padding:10px 25px;
+border-radius:30px;
+font-weight:600;
+}
+
+/* pop upp booking page  */
+
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+}
+
+.premium-modal{
+background:#111;
+padding:35px;
+border-radius:15px;
+width:420px;
+box-shadow:0 10px 40px rgba(212,175,55,0.4);
+animation:popup 0.4s ease;
+}
+
+@keyframes popup{
+from{transform:scale(0.7);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+
+.modal-title{
+color:#d4af37;
+text-align:center;
+margin-bottom:20px;
+}
+
+.premium-modal input,
+.premium-modal select,
+.premium-modal textarea{
+width:100%;
+margin-bottom:12px;
+padding:10px;
+border-radius:8px;
+border:none;
+}
+
+.row-fields{
+display:flex;
+gap:10px;
+}
+
+.premium-btn{
+width:100%;
+padding:12px;
+background:linear-gradient(45deg,#d4af37,#ffd700);
+border:none;
+border-radius:30px;
+font-weight:600;
+margin-top:10px;
+}
+
+.cancel-btn{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:none;
+background:#333;
+color:#fff;
+border-radius:30px;
+}
